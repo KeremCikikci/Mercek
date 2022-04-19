@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rcyclerview"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="8dp"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:id="@+id/profilImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="25%"
+        android:layout_marginLeft="8dp"
+        android:layout_marginVertical="12dp"
+        android:background="@drawable/round"
+        android:src="@drawable/person_128"/>
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:scrollbars = "vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="User Name"
+        android:textColor="#1e1c1d"
+        android:layout_toRightOf="@+id/profilImageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/userMailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars = "vertical"
+        android:textSize="24dp"
+        android:text="User Mail"
+        android:singleLine="true"
+        android:layout_below="@+id/userNameText"
+        android:textColor="#1e1c1d"
+        android:layout_toRightOf="@+id/profilImageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"/>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

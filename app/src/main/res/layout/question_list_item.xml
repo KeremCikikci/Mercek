@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#1e1c1d"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/optionDropDownImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/drop_down_48"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_flat_button"/>
+
+    <ImageButton
+        android:id="@+id/createOptionImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@+id/optionDropDownImageButton"
+        android:layout_marginRight="16px"
+        android:background="@drawable/rounded_flat_button"
+        android:src="@drawable/add_64" />
+
+    <ListView
+        android:id="@+id/optionListView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/optionDropDownImageButton"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" />
+</RelativeLayout>

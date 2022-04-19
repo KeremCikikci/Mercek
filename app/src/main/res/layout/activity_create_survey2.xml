@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".create_survey2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D1D1D1"
+        app:layout_heightPercent="20%"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#B1B1B1"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <View
+
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#B1B1B1" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/relativeLayout"/>
+
+
+    </RelativeLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>

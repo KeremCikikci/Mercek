@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1C1D"
+    tools:context=".login_screen"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/logo_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_siyah"
+        app:layout_heightPercent="40%"
+        app:layout_widthPercent="40%" />
+
+    <EditText
+        android:id="@+id/mailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="96px"
+        android:layout_below="@+id/logo_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48px"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#1e1c1d"
+        android:drawableLeft="@drawable/mail_32"
+        android:hint=" Mail"
+        android:textColorHint="#303030"
+        android:paddingLeft="16px"
+        android:paddingRight="16px"
+        app:layout_widthPercent="70%" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        app:layout_widthPercent="70%"
+        android:layout_height="96px"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#303030"
+        android:layout_below="@+id/mailEditText"
+        android:layout_marginTop="36px"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        android:hint=" Şifre"
+        android:textColor="#1e1c1d"
+        android:paddingLeft="16px"
+        android:drawableLeft="@drawable/lock_32"
+        android:paddingRight="16px"
+        android:drawableRight="@drawable/visibility_off_32"
+        android:layout_width="wrap_content"/>
+
+
+    <CheckBox
+        android:id="@+id/rememberMeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignLeft="@+id/passwordEditText"
+        android:layout_marginTop="24px"
+        android:checked="false"
+        android:text="Beni hatırla"
+        android:textColor="#fedc01"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:text="Şifremi unuttum"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="24px"
+        android:textColor="#fedc01"
+        android:layout_alignRight="@+id/passwordEditText"
+        android:textSize="36px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="70%"
+        android:background="@drawable/rounded_button"
+        app:backgroundTint="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/forgotPasswordTextView"
+        android:layout_marginTop="128px"
+        android:text="Giriş Yap"
+        android:textSize="48px"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/dontHaveAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24px"
+        android:background="#1E1C1D"
+        android:text="Hesabım yok"
+        android:textColor="#FFFF"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/loginWithSocialNetworkTextView"
+        android:text="Google ile giriş yap"
+        android:layout_below="@+id/dontHaveAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48px"
+        android:textColor="#FFFF"
+        android:layout_marginTop="72px"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/loginWithGoogleImageView"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/google_circle"
+        android:layout_below="@id/loginWithSocialNetworkTextView"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

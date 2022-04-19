@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/survey_single"
+    android:layout_width="140dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rcyclerview"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="8dp">
+
+    <ImageView
+        android:id="@+id/surveyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_image"
+        android:src="@drawable/survey_check_96"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="100%" />
+
+    <TextView
+        android:id="@+id/surveyNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surveyImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Survey Name"
+        android:textColor="#FFFF"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/surveyCreatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surveyNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Survey Creator"
+        android:textColor="#FFFF"
+        android:textSize="16dp" />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

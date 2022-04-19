@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="questionNumber"
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

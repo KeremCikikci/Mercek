@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406362178521",
+    "project_id": "mercek-95f04",
+    "storage_bucket": "mercek-95f04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406362178521:android:e8b10d9201573c4a5c8fc8",
+        "android_client_info": {
+          "package_name": "com.example.mercek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406362178521-msn5n1rc2snf6nl4crem1nr2evsf5t94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIxa5zavZ8-TSOYalJxXfiGafIoPXHOM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406362178521-msn5n1rc2snf6nl4crem1nr2evsf5t94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
